@@ -1,0 +1,7 @@
+name: steamturbines
+channels:
+    - conda-forge
+dependencies:
+    - python=3.6.3
+    - pandas=0.21.1
+    - pulp=1.6.8

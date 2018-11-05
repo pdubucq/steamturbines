@@ -20,7 +20,7 @@ conda activate steamturbines
 ```
 ## Authors
 
-**Pascal Dubucq**
+Pascal Dubucq
 
 ## License
 
