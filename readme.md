@@ -1,4 +1,4 @@
-# Python Optimization Models for Steam Turbines lecture at Hamburg University of Technology
+# Optimization Models for Steam Turbines lecture at TUHH
 
 The files in this library are used in the lecture "Steam Turbine" at Hamburg University of Technology.
 
@@ -20,7 +20,7 @@ conda activate steamturbines
 ```
 ## Authors
 
-* **Pascal Dubucq** - *Initial work* - [PurpleBooth](https://github.com/pdubucq)
+**Pascal Dubucq**
 
 ## License
 
