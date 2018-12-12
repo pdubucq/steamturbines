@@ -10,6 +10,11 @@ You can use the models in this repository on Azure Notebooks or on a local machi
 
 To work with the files in this library using [Azure Notebooks](https://notebooks.azure.com/pascal-dubucq/libraries/tuhh) only a Webbrowser and a Microsoft Account is needed. To install the libraries required to run the code, first you need to open and run the setup.ipynb Notebook, then you are good to go.
 
+Alternatively, go to console, start ipython and run
+'''
+conda install -c conda-forge pulp
+'''
+
 ### Running the code locally
 
 To run the models with anaconda install the dependencies using the environment.yml.
