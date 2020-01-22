@@ -30,10 +30,10 @@ The default browser will open up and you're ready to go
 
 - If the jupyter command is not found run `conda install -c anaconda jupyter` 
 - If the browser doesnt start, you can find the URL in the console output (if you dont find it try http://localhost:8888/tree)
-- If `import pulp` failes add the following line at the top of your script:
+- If `import pulp` failes add the following two lines at the top of your script:
 ```
-import sys
-sys.path.append("C:/Users/cjb1611/AppData/Local/conda/conda/envs/dampfturbinen/Lib/site-packages/PuLP-1.6.1-py2.7.egg")
+import sys, os
+sys.path.append(os.environ["appdata"] + "\..\Local\Continuum\anaconda3\envs\steamturbines\Lib\site-packages\PuLP-1.6.8-py3.7.egg-info")
 ```
 
 
