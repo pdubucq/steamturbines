@@ -13,12 +13,13 @@ Einsatzprofil für den Folgetag gefunden werden.
 import sys
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 from pulp import LpProblem, LpMinimize, LpVariable, LpInteger, LpStatus, value,LpAffineExpression
 
 from tools import update_excel
 
-def read_config(filename='optimierung_mit_speicher.xlsx'):
+def read_config(filename='4_optimization_model_with_storage_input.xlsx'):
     full_params=pd.read_excel(filename, sheet_name='params', index_col=0)
     params=full_params['Wert'].transpose()
     ts=pd.read_excel(filename, sheet_name='timeseries', index_col=0)
@@ -133,13 +134,14 @@ def build_and_run(filename):
     params, ts = read_config(filename)
     result = build_and_solve(params, ts)
     postprocess(filename, result, params, ts)
+    plt.show()
 
 #%% Eintrittspunkt, der ausgeführt wird, wenn man das Skript als Programm startet
 if __name__ == '__main__':
     if len(sys.argv)>1:
         build_and_run(sys.argv[1])
     else:
-         build_and_run('optimierung_mit_speicher.xlsx')   
+         build_and_run('4_optimization_model_with_storage_input.xlsx')   
          
 #%% Vergleiche Speichergrößen         
 def simulate_storage_sizes(filename, n=10):
@@ -158,9 +160,9 @@ def simulate_storage_sizes(filename, n=10):
 #%%
 if False:
 #%%
-    filename='optimierung_mit_speicher.xlsx'
+    filename='4_optimization_model_with_storage_input.xlsx'
     results=simulate_storage_sizes(filename)    
     
 #%%
-    filename='optimierung_mit_speicher.xlsx'
+    filename='4_optimization_model_with_storage_input.xlsx'
     
