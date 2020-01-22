@@ -2,27 +2,32 @@
 
 The files in this library are used in the lecture "Steam Turbine" at Hamburg University of Technology.
 
-## Getting Started
+## Prerequisites
 
-You can use the models in this repository on Azure Notebooks or on a local machine using a Python distribution like Anaconda.
+Easiest way to start is to install Anaconda and follow the steps below.
 
-### Running the code using Azure Notebooks
+### Setting up Anaconda in TUHH RZ
 
-To work with the files in this library using [Azure Notebooks](https://notebooks.azure.com/pascal-dubucq/libraries/tuhh) only a Webbrowser and a Microsoft Account is needed. To install the libraries required to run the code, first you need to open and run the setup.ipynb Notebook, then you are good to go.
+- Activate Python/Anaconda using the RZ-Config tool "MyConfig" located on the desktop
+- Relogin
 
-Alternatively, go to console, start ipython and run
-'''
-conda install -c conda-forge pulp
-'''
+### Installing dependencies
 
-### Running the code locally
+- Copy "steamturbines" folder from
+https://github.com/pdubucq/steamturbines to "My_Documents"
+- Search and run the "Anaconda Prompt" using the Windows toolbar
+- change to the steamturbines directory using the command '''cd ../steamturbines'''
+- Install all needed packages and tools using the command '''conda env create -f environment.yml'''
+- Activate the new environment using the command: '''conda activate steamturbines'''
 
-To run the models with anaconda install the dependencies using the environment.yml.
+### Starting the Jupyter Notebook
 
-```python
-conda env create -f environment.yml
-conda activate steamturbines
-```
+- In the Anaconda console run the command
+
+''' jupyter notebook '''
+
+The default browser will open up and you're ready to go
+
 ## Authors
 
 Pascal Dubucq
