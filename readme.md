@@ -41,14 +41,10 @@ The default browser will open up and you're ready to go
 - If `import pulp` fails, have a look at the Jupyter notebook 'troubleshooting.ipynb'
 
 
-## Authors
-
+## Footnotes
+### Authors
 Pascal Dubucq
-
-## License
-
+### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* The optimzation models are all using PuLP and pandas. Thanks for the great work to the developers.
+### Acknowledgments
+* The optimzation models are using open source software Thanks for the great work to the original developers!
