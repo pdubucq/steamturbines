@@ -2,16 +2,24 @@
 
 The files in this library are used in the lecture "Steam Turbine" at Hamburg University of Technology.
 
-## Prerequisites
+They provide a simple dayahead combined heat and power dispatch task solved with a mixed integer linear
+program. It uses Anaconda / Python and PuLP and Jupyter notebooks with explanatory comments.
 
-Easiest way to start is to install Anaconda and follow the steps below.
+## Software installation
+
+Easiest way to start is to install Anaconda and follow the steps below to install extra packages needed.
 
 ### Setting up Anaconda in TUHH RZ
 
 - Activate Python/Anaconda using the RZ-Config tool "MyConfig" located on the desktop
 - Relogin
 
-### Installing dependencies
+### Installing Anaconda on other PCs (no admin rights required)
+
+- Follow the instructions on https://docs.anaconda.com/anaconda/install/ for your
+operation system
+
+### Installing extra dependencies
 
 - Download "steamturbines" folder from
 https://github.com/pdubucq/steamturbines to "My_Documents" and unzip it
@@ -20,13 +28,13 @@ https://github.com/pdubucq/steamturbines to "My_Documents" and unzip it
 - Install all needed packages and tools using the command `conda env create -f environment.yml`
 - Activate the new environment using the command: `conda activate steamturbines`
 
-### Starting the Jupyter Notebook
+## Starting the Jupyter Notebook
 
 - In the Anaconda console run the command `jupyter notebook`
 
 The default browser will open up and you're ready to go
 
-### Troubleshooting ###
+## Troubleshooting
 
 - If the jupyter command is not found run `conda install -c anaconda jupyter` 
 - If the browser doesnt start, you can find the URL in the console output (if you dont find it try http://localhost:8888/tree)
