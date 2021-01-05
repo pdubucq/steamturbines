@@ -42,9 +42,9 @@ The default browser will open up and you're ready to go
 
 
 ## Footnotes
-### Authors
+#### Authors
 Pascal Dubucq
-### License
+#### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-### Acknowledgments
-* The optimzation models are using open source software Thanks for the great work to the original developers!
+#### Acknowledgments
+The optimzation models are using open source software Thanks for the great work to the original developers!
