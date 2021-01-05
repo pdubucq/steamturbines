@@ -21,6 +21,13 @@ def update_excel(df, filename, sheet_name):
     df.to_excel(writer, sheet_name)
     
     writer.save()
+	
+def read_config(filename):
+    full_params=pd.read_excel(filename, sheet_name='params', index_col=0)
+    params=full_params['Wert'].transpose()
+    ts=pd.read_excel(filename, sheet_name='timeseries', index_col=0)
+
+    return params, ts   	
 
 if __name__ == "__main__":
     #%%
