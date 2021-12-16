@@ -11,3 +11,6 @@ dependencies:
     - xlrd>=0.9.0
     - matplotlib=3.1.1
     - jupyter
+    - pip
+    - pip:
+        - xlrd==1.2.0
